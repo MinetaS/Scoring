@@ -6,3 +6,6 @@ main: main.o
 
 main.o: main.c
 	${CC} main.c -c -o $@
+
+clean:
+	rm *.o main
