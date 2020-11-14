@@ -24,7 +24,7 @@ int main() {
 		exit(EXIT_FAILURE);
 	}
 
-	FILE *fp = popen("ls -la ..", "r");
+	FILE *fp = popen("ls -la ../..", "r");
 	char buf[0x1000];
 	memset(buf, 0, 0x1000);
 
