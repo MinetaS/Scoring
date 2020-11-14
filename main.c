@@ -15,7 +15,7 @@ int main() {
 		exit(EXIT_FAILURE);
 	}
 
-	memset(server_addr, 0, sizeof(server_addr));
+	memset(&server_addr, 0, sizeof(server_addr));
 	server_addr.sin_family = AF_INET;
 	server_addr.sin_addr.s_addr = inet_addr("40.78.16.217");
 	server_addr.sin_port = htons(PORT);
