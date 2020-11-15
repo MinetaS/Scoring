@@ -1,11 +1,11 @@
 
 all: main
 
-main: client.o
+main: main.o
 	${CC} ${CFLAGS} $^ -o $@
 
-client.o: client.c
-	${CC} client.c -c -o $@
+main.o: main.c
+	${CC} main.c -c -o $@
 
 clean:
 	rm *.o main
